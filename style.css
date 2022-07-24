@@ -56,7 +56,7 @@ section {
 }
 
 .pokemon-block-back {
-  background: black;
+  background: #39f;
 }
 
 .poke,
@@ -70,12 +70,6 @@ section {
   transform: rotateY(180deg);
   position: absolute;
   top: 0%;
-}
-
-.stat-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  text-align: left;
 }
 
 .id-poke {

@@ -31,6 +31,7 @@ const pintarPoke = (pokemon) => {
   const { id, name, sprites, height, weight, types } = pokemon;
   const pokeInnerHtml = `
     <img src="${sprites.front_default}" />
+    <img src="${sprites.back_default}" />
     <h2>${name}</h2>
     <span>EXP: ${pokemon.base_experience}</span>
     <div class="tipo-poke">
@@ -49,12 +50,14 @@ const pintarPoke = (pokemon) => {
 
   const cardBack = document.createElement('div');
   cardBack.classList.add('pokemon-block-back');
-  cardBack.textContent = "carta de atras";
+  
 
   cardContainer.appendChild(div);
   cardContainer.appendChild(cardBack);
   caja.appendChild(flipCard);
 };
+
+
 
 fetchPokemones();
 
